@@ -1,0 +1,19 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea/.name
+.idea/consult.iml
+.idea/copyright/
+.idea/misc.xml
+.idea/modules.xml
+.idea/watcherTasks.xml
+.idea/workspace.xml
+dist/
+gulpfile.js
+node_modules/
+package.json
+
+
+
+
+
+
