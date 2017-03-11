@@ -12,13 +12,14 @@
     <section class="intro">
         <header class="site-head">
             <div class="container">
-                <div class="logo">
+               <div class="row">
+                   <div class="logo col-md-3">
                     <a href="#">
                         <img src="images/consult-logo.png" alt="">
                     </a>
                 </div>
-                <nav>
-                    <ul class="navigation ">
+                <nav class="hidden-sm-down col-md-6">
+                    <ul class="navigation d-flex justify-content-around">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">about us</a></li>
                         <li><a href="#">industry</a></li>
@@ -27,14 +28,16 @@
                         <li><a href="#">Contact us</a></li>
                     </ul>
                 </nav>
-                <span class="phone">+91 5685 6664 555</span>
-                <a href="mailto:info@consultplus.com?subject=Business question"></a>
+                <div class="contact-date col-md-3">
+                    <span class="phone">+91 5685 6664 555</span>
+                    <a href="mailto:info@consultplus.com?subject=Business question"></a>
+                </div></div>
                 <!--mobile-menu-->
-                <button id="button-menu"></button>
+                <button class="btn-prime hidden-md-up"></button>
             </div>
         </header>
         <div class="container">
-            <ul class="hide-nav-bar ">
+            <ul class=" hidden-md-up">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">about us</a></li>
                 <li><a href="#">industry</a></li>
@@ -44,7 +47,7 @@
             </ul>
             <!-- end mobile menu-->
             <!--intro-->
-            <h2 class="site-title">
+            <h2 class="site-title site-title-color">
                 <span class="site-title-less">We are leading consulting company</span>
                 Choose your industry
             </h2>
@@ -65,13 +68,16 @@
     <section class="about">
         <div class="container">
             <h3 class="section-title">About us</h3>
-            <p class="about-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem
-                Ipsum
-                has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+            <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
                 took a galley of type and scrambled.</p>
-            <button class="btn-more">Read More</button>
+            <button class="btn-prime">Read More</button>
             <div class="carousel-clients">
+                <div class="carousel-client-item"><img src="images/slide-client-code-item.png"></div>
+                <div class="carousel-client-item"><img src="images/slide-client-video-item.png"></div>
+                <div class="carousel-client-item"><img src="images/slide-client-audio-item.png"></div>
+                <div class="carousel-client-item"><img src="images/slide-client-grafic-item.png"></div>
+                <div class="carousel-client-item"><img src="images/slide-client-some-item.png"></div>
                 <div class="carousel-client-item"><img src="images/slide-client-code-item.png"></div>
                 <div class="carousel-client-item"><img src="images/slide-client-video-item.png"></div>
                 <div class="carousel-client-item"><img src="images/slide-client-audio-item.png"></div>
@@ -89,30 +95,30 @@
             <ul class="feature-list">
                 <li class="feature-list-item">
                     <h4 class="feature-list-title">24 hour support</h4>
-                    <p class="feature-list-description"> containing Lorem Ipsum passages,
+                    <p class="description"> containing Lorem Ipsum passages,
                         and more recently with desktop publishing software like Aldus PageMaker including </p>
                 </li>
                 <li class="feature-list-item">
                     <h4 class="feature-list-title">Business boosting</h4>
-                    <p class="feature-list-description"> established fact that a reader will be distracted by
+                    <p class="description"> established fact that a reader will be distracted by
                         the readable content of a page when looking </p>
                 </li>
                 <li class="feature-list-item">
                     <h4 class="feature-list-title">FUll security</h4>
-                    <p class="feature-list-description"> Lorem Ipsum is simply dummy text of the printing and
+                    <p class="description"> Lorem Ipsum is simply dummy text of the printing and
                         typesetting
                         industry.
                         Lorem Ipsum has been the industry's </p>
                 </li>
                 <li class="feature-list-item">
                     <h4 class="feature-list-title">Creative process</h4>
-                    <p class="feature-list-description">There are many variations of passages of Ipsum avail
+                    <p class="description">There are many variations of passages of Ipsum avail
                         able, but the majority have suffered alteration.</p>
                 </li>
             </ul>
             <div class="contact-us">
                 <p class="contact-description">If you want to boost your business Contact us</p>
-                <a href="mailto:info@consultplus.com?subject=Business question">Boost your business</a>
+                <a href="mailto:info@consultplus.com?subject=Business question" class="btn-prime">Boost your business</a>
             </div>
         </div>
     </section>
@@ -125,7 +131,7 @@
                     <img src="images/progect-item-one.jpg" alt="">
                     <div class="project-description">
                         <h4 class="project-title">Project Heading</h4>
-                        <p class="project-date">Popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                        <p class="description description-color">Popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
                             passages. fact that a reader will be distracted by the readable of a page when.</p>
                     </div>
                 </li>
@@ -143,12 +149,12 @@
                     </ul>
                     <div class="project-description">
                         <h4 class="project-title">Project Heading</h4>
-                        <p class="project-date">Popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                        <p class="description">Popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
                             passages. fact that a reader will be distracted by the readable of a page when.</p>
                     </div>
                 </li>
             </ul>
-            <button class="btn-more">Full Projects</button>
+            <button class="btn-prime">Full Projects</button>
         </div>
     </section>
     <section class="services">
@@ -157,18 +163,18 @@
             <ul class="services-list">
                 <li class="services-list-item">
                     <h4 class="services-item-title">business consultation</h4>
-                    <p class="services-item-description">Many variations of passages of Lorem available,
+                    <p class="description">Many variations of passages of Lorem available,
                         but the majority have suffered alteration in some form, by injected humour,
                         or randomised.</p>
                 </li>
                 <li class="services-list-item">
                     <h4 class="services-item-title">boost local business</h4>
-                    <p class="services-item-description">There are many variations of passages of Lorem Ipsum available,
+                    <p class="description">There are many variations of passages of Lorem Ipsum available,
                         but the majority have suffered alteration in some.</p>
                 </li>
                 <li class="services-list-item">
                     <h4 class="services-item-title">accounting</h4>
-                    <p class="services-item-description">professor at Hampden-Sydney College in Virginia,
+                    <p class="description">professor at Hampden-Sydney College in Virginia,
                         looked up one of the more obscure Latin words, consectetur.</p>
                 </li>
             </ul>
@@ -177,43 +183,64 @@
     <section class="testimonials">
         <div class="container">
             <h3 class="section-title">testimonials</h3>
-            <div class="slide-testimon">
-                <div class="slide-testimon-nav">
-                    <div class="slide-testimon-nav-item"><img src="images/feedback-item-one.jpg" alt=""></div>
-                    <div class="slide-testimon-nav-item"><img src="images/feedback-item-two.jpg" alt=""></div>
-                    <div class="slide-testimon-nav-item"><img src="images/feedback-item-three.jpg" alt=""></div>
-                </div>
-                <div class="slide-testimon-item">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type speci
-                        book. It has survived not only five centuries, but also the leap into electronic
-                        typesetting.</p>
-                    <span class="slide-testimon-item-name">Client Name</span>
-                    <span class="slide-testimon-item-meta">Designation</span>
+            <div class="slide-testimon-wrap">
+                <div class="slide-testimon">
+                    <div class="slide-testimon-item">
+                        <p class="description description-color">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type speci
+                            book. It has survived not only five centuries, but also the leap into electronic
+                            typesetting.</p>
+                        <span class="slide-testimon-item-name">Client Name</span>
+                        <span class="slide-testimon-item-meta">Designation</span>
+                    </div>
+                    <div class="slide-testimon-item">
+                        <p class="description description-color">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type speci
+                            book. It has survived not only five centuries, but also the leap into electronic
+                            typesetting.</p>
+                        <span class="slide-testimon-item-name">Client Name</span>
+                        <span class="slide-testimon-item-meta">Designation</span>
+                    </div>
+                    <div class="slide-testimon-item">
+                        <p class="description description-color">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type speci
+                            book. It has survived not only five centuries, but also the leap into electronic
+                            typesetting.</p>
+                        <span class="slide-testimon-item-name">Client Name</span>
+                        <span class="slide-testimon-item-meta">Designation</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="blog">
         <div class="container">
-            <h3 class="section-title">testimonials</h3>
+            <h3 class="section-title">Blog</h3>
             <ul class="blog-list">
                 <li class="blog-list-item">
                     <img src="images/blog-list-item-one.jpg" alt="">
                     <span class="blog-item-date">February 22, 2016 </span>
                     <h4 class="blog-item-title">Blog Heading here</h4>
-                    <p class="blog-description">Established fact that a reader will be distracted by the readable of a
+                    <p class="description">Established fact that a reader will be distracted by the readable of a
                         page when looking at its layout...</p>
                 </li>
                 <li class="blog-list-item">
                     <span class="blog-item-date">February 22, 2016 </span>
                     <h4 class="blog-item-title">Blog Heading here</h4>
-                    <p class="blog-description">Established fact that a reader will be distracted by the readable of a
+                    <p class="description">Established fact that a reader will be distracted by the readable of a
                         page when looking at its layout...</p>
                 </li>
             </ul>
-            <button class="btn-more">Full Blog</button>
+            <button class="btn-prime">Full Blog</button>
         </div>
     </section>
     <section class="contact-us">
@@ -268,9 +295,9 @@
         </div>
         <div class="foot-form">
             <h5 class="foot-title">navigation</h5>
-            <p class="foot-form-description">Enter your email address to subscribe our notification of our new post & features by email.</p>
+            <p class="description">Enter your email address to subscribe our notification of our new post & features by email.</p>
             <input type="email" placeholder="Email Address">
-            <button type="submit" class="btn-more"></button>
+            <button type="submit" class="btn-prime">Subscribe</button>
         </div>
         <div class="footer-foo">
             <p class="copy">Copyright © 2016 Consultplus theme.</p>

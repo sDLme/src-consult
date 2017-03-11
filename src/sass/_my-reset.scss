@@ -1,11 +1,14 @@
-
+body {
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  color: $paragraf-text-color;
+}
 //press footer
 html{
   height: 100%;
 
   body{
     height: 100%;
-    padding: 15px;
     display: flex;
     flex-direction: column;
     main{
@@ -17,3 +20,30 @@ html{
   }
 }
 // and press
+ul,
+ol {
+  list-style: none;
+}
+a,
+a:visited,
+a:active,
+a:link {
+  text-decoration: none;
+}
+
+
+//slick
+.slick-dots {
+  top: -25px;
+   li {
+    height: 55px;
+    width: 55px;
+    background: url("../images/test-item-one.png") center no-repeat;
+  }
+}
+.slick-prev, .slick-next { display: none}
+
+.testimonials .slick-prev:before,
+.testimonials .slick-next:before,
+.project-img-slide .slick-prev:before,
+.project-img-slide .slick-next:before { content: ""}
