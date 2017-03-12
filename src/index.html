@@ -9,34 +9,35 @@
 </head>
 <body>
 <main>
-    <section class="intro">
+    <section class="intro d-flex flex-column justify-content-between ">
         <header class="site-head">
-            <div class="container">
-               <div class="row">
-                   <div class="logo col-md-3">
+            <div class="container ">
+               <div class="row d-flex justify-content-between">
+                   <div class="logo">
                     <a href="#">
                         <img src="images/consult-logo.png" alt="">
+                        <h1 class="hidden-xl-down">consult</h1>
                     </a>
                 </div>
-                <nav class="hidden-sm-down col-md-6">
-                    <ul class="navigation d-flex justify-content-around">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">industry</a></li>
-                        <li><a href="#">services</a></li>
-                        <li><a href="#">pages</a></li>
-                        <li><a href="#">Contact us</a></li>
+                <nav class="hidden-sm-down">
+                    <ul class="navigation d-flex justify-content-between">
+                        <li class="navigation-item"><a href="#">Home</a></li>
+                        <li class="navigation-item"><a href="#">about us</a></li>
+                        <li class="navigation-item"><a href="#">industry</a></li>
+                        <li class="navigation-item"><a href="#">services</a></li>
+                        <li class="navigation-item"><a href="#">pages</a></li>
+                        <li class="navigation-item"><a href="#">Contact us</a></li>
                     </ul>
                 </nav>
-                <div class="contact-date col-md-3">
+                <div class="contact-date d-flex justify-content-around align-items-start">
                     <span class="phone">+91 5685 6664 555</span>
-                    <a href="mailto:info@consultplus.com?subject=Business question"></a>
+                    <a href="mailto:info@consultplus.com?subject=Business question" class="head-contact-link"></a>
                 </div></div>
                 <!--mobile-menu-->
                 <button class="btn-prime hidden-md-up"></button>
             </div>
         </header>
-        <div class="container">
+        <div class="container ">
             <ul class=" hidden-md-up">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">about us</a></li>
@@ -51,16 +52,38 @@
                 <span class="site-title-less">We are leading consulting company</span>
                 Choose your industry
             </h2>
-            <div class="intro-slide">
-                <div class="intro-slide-item"><img src="images/slide-intro-educate-item.png"></div>
-                <div class="intro-slide-item"><img src="images/slide-intro-business-item.png"></div>
-                <div class="intro-slide-item"><img src="images/slide-intro-tech-item.png"></div>
-                <div class="intro-slide-item"><img src="images/slide-intro-bank-item.png"></div>
-            </div>
-            <div class="intro-slide-nav">
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="intro-slide row">
+                <div class="intro-slide-item-wrap">
+                    <div class="intro-slide-item">
+                        <img src="images/slide-intro-educate-item.png" class="intro-slide-img">
+                    </div>
+                </div>
+                <div class="intro-slide-item-wrap">
+                    <div class="intro-slide-item">
+                        <img src="images/slide-intro-business-item.png" class="intro-slide-img">
+                    </div>
+                </div>
+                <div class="intro-slide-item-wrap">
+                    <div class="intro-slide-item">
+                        <img src="images/slide-intro-tech-item.png" class="intro-slide-img">
+                    </div>
+                </div>
+                <div class="intro-slide-item-wrap">
+                    <div class="intro-slide-item">
+                        <img src="images/slide-intro-bank-item.png" class="intro-slide-img">
+                    </div>
+                </div>
+                <div class="intro-slide-item-wrap">
+                    <div class="intro-slide-item">
+                        <img src="images/slide-intro-bank-item.png" class="intro-slide-img">
+                    </div>
+                </div>
+                <div class="intro-slide-item-wrap">
+                    <div class="intro-slide-item">
+                        <img src="images/slide-intro-bank-item.png" class="intro-slide-img">
+                    </div>
+                </div>
+
             </div>
             <!--end intro-->
         </div>
@@ -89,9 +112,6 @@
     <section class="features">
         <div class="container">
             <h3 class="section-title">our features</h3>
-            <div class="feature-img">
-                <img src="images/feature-logo.png" alt="">
-            </div>
             <ul class="feature-list">
                 <li class="feature-list-item">
                     <h4 class="feature-list-title">24 hour support</h4>
@@ -116,8 +136,8 @@
                         able, but the majority have suffered alteration.</p>
                 </li>
             </ul>
-            <div class="contact-us">
-                <p class="contact-description">If you want to boost your business Contact us</p>
+            <div class="contact-us d-flex justify-content-between align-items-center">
+                <p class="contact-description ">If you want to boost your business Contact us</p>
                 <a href="mailto:info@consultplus.com?subject=Business question" class="btn-prime">Boost your business</a>
             </div>
         </div>

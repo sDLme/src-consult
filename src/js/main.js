@@ -10,15 +10,24 @@ $(document).ready(function(){
         slickNext: false,
         slickPrev: false,
 })
+
     $('.project-img-slide').slick({
         autoplay: true,
     })
+    ///ABOUT carousel
     $('.carousel-clients').slick({
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 3,
         slickNext: true,
         slickPrev: true
+    })
+
+    $('.intro-slide').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        dots: true,
     })
 });
 

@@ -1,0 +1,65 @@
+.features {
+  padding-top: 90px;
+  background: #e7eff1;
+    .section-title {
+      margin-bottom: 70px;
+    }
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0;
+    .feature-list-item {
+      width: 40%;
+      margin-bottom: 70px;
+
+      &:nth-child(odd) {
+        text-align: right;
+        margin-right: 10%;
+        padding-right: 60px;
+        background: url("../images/featur-list-item-support.png") 100% 8%  no-repeat;
+          &:nth-child(3) {
+            background: url("../images/feature-list-item-secur.png") 100% 8%  no-repeat;
+          }
+      }
+      &:nth-child(even) {
+        text-align: left;
+        margin-left: 10%;
+        padding-left: 60px;
+        background: url("../images/feature-list-item-bus.png") 0 8%  no-repeat;
+        &:nth-child(4) {
+          background: url("../images/feature-list-item-creat.png") 0 8%  no-repeat;
+        }
+      }
+    }
+    .feature-list-title {
+      line-height: 36px;
+      font-size: 17px;
+      font-weight: 700;
+      color: $title-text;
+    }
+    &:before {
+      content:"";
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -88%);
+      border-radius: 50%;
+      box-shadow: 0px 0px 79px 26px rgba(218,231,233,1);
+      background: $importent-color url("../../images/feature-logo.png") center no-repeat;
+    }
+  }
+  .contact-us {
+    padding: 20px;
+    background: #565d5d;
+    color: #fff;
+    .contact-description {
+      margin-bottom: 0;
+      line-height: 20px;
+      font-size:20px;
+      font-family: 'Domine', serif;
+    }
+  }
+}
