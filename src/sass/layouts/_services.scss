@@ -1,0 +1,27 @@
+.services {
+  padding: 90px 0;
+  background: #fffaf3;
+  .services-list {
+    margin-top: 60px;
+    .services-list-item {
+      padding-top: 70px;
+      .services-item-title {
+        line-height: 33px;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $title-text;
+      }
+      &:nth-child(1) {
+        background: url("../../images/servis-list-item-bus.png") top left no-repeat;
+      }
+      &:nth-child(2) {
+        background: url("../../images/servise-list-item-local.png") top left no-repeat;
+      }
+      &:nth-child(3) {
+        margin-right: 0;
+        background: url("../../images/servise-list-item-account.png") top left no-repeat;
+      }
+    }
+  }
+}

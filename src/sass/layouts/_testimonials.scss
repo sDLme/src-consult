@@ -1,3 +1,65 @@
 .testimonials {
   background: $prime-blue;
+  color: $importent-color;
+  .test-wrapp {
+    padding: 90px 0;
+    background: url("../../images/qout-big.png") top left no-repeat;
+    .slide-testimon-wrap {
+      max-width: 900px;
+      width: 100%;
+      margin: 135px auto 0;
+      text-align: center;
+      .slide-testimon-item {
+        position: relative;
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          right: 0;
+          bottom: 50%;
+          width: 35px;
+          height: 25px;
+          background: url("../images/qout-littel.png")bottom right no-repeat;
+        }
+      }
+    }
+    .slick-dots {
+      top: -50%;
+      li {
+        height: 55px;
+        width: 55px;
+        background: url("../images/test-item-one.png") center no-repeat;
+        &:active {
+          transform: scale(1.2,1.2);
+        }
+        &:nth-child(2) {
+          background: url("../images/test-item-two.png") center no-repeat;
+          background-size: contain;
+        }
+        &:nth-child(3) {
+          background: url("../images/test-item-three.png") center no-repeat;
+        }
+      }
+    }
+    .slide-testimon-item-name {
+      display: block;
+      position: relative;
+      margin-top: 30px;
+      padding-top: 35px;
+      font-weight: 700;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 18px;
+        height: 3px;
+        top:0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: $importent-color;
+      }
+    }
+    .slide-testimon-item-meta {
+      font-family: 'Domine', serif;
+    }
+  }
 }

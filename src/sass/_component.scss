@@ -10,8 +10,15 @@
   background: #16d428;
   color: $importent-color;
   cursor: pointer;
+  outline: none;
   &:hover {
     color: $paragraf-text-color;
+  }
+  &-center {
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

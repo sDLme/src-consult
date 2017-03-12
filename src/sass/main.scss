@@ -1,8 +1,6 @@
 //fonts
 @import url('https://fonts.googleapis.com/css?family=Domine:400,700|Montserrat:300,400,700,800');
-
 //font-family: 'Montserrat', sans-serif;
-
 //font-family: 'Domine', serif;
 
 
@@ -22,10 +20,13 @@
 //layouts
 @import "layouts/header";
 @import "layouts/intro";
+@import "layouts/about";
 @import "layouts/features";
 @import "layouts/portfolio";
+@import "layouts/services";
 @import "layouts/testimonials";
-@import "layouts/about";
-
+@import "layouts/blog";
+@import "layouts/contact-us";
+@import "layouts/footer";
 
 

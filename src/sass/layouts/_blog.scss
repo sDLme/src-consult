@@ -1,0 +1,35 @@
+.blog {
+  padding: 90px 0;
+  background: #e7eff1;
+  .blog-list {
+    margin: 45px 0 60px;
+    .blog-list-item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      border-top: 3px solid $nav-btn-color;
+      background: $importent-color;
+      &:nth-child(even) {
+        padding-right: 20px;
+        border-top: 3px solid $prime-orang;
+        //background: linear-gradient(90deg, #d8e5e8 2%, #fff 90%)
+      background: linear-gradient(to right, rgba(218,219,219,1) 0%, rgba(218,230,232,1) 0%, rgba(226,226,226,1) 1%, rgba(230,230,230,1) 2%, rgba(254,254,254,1) 9%);
+      }
+      .blog-content {
+        margin-top: 50px;
+        padding-left: 40px;
+      }
+      .blog-item-title,
+      .blog-item-date {
+        color: $title-text;
+      }
+      .blog-item-title {
+        margin-bottom: 35px;
+        font-weight: 700;
+      }
+      .blog-item-date {
+        font-family: 'Domine', serif;
+      }
+    }
+  }
+}

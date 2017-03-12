@@ -1,3 +1,53 @@
 .portfolio {
+  padding: 95px 0;
+  .project-list {
+    img {
+      width: 100%;
+    }
+    margin-top: 30px;
+    padding: 0;
+    .project-list-item {
+      position: relative;
+      .meta-title {
+        position: absolute;
+        top:20px;
+        left: 40px;
+        padding: 0 15px;
+        line-height: 33px;
+        font-size: 12px;
+        text-transform: uppercase;
+        border: 2px solid $prime-orang;
+        border-radius: 50px;
+        color: $importent-color;
+      }
+      .project-title {
+        color: $importent-color;
+        &-color {
+          color: $title-text;
+        }
+      }
+      .project-description {
+        padding: 40px 30px;
+      }
+      &:nth-child(odd) {
+        .project-description {
+          background: $prime-orang;
+        }
+      }
+      &:nth-child(even) {
+        display: flex;
+        flex-direction: column;
+        .meta-title {
+          z-index: 2;
+        }
+        .project-description {
+          border: 1px solid #dae5e8;
+        }
+      }
+      .project-img-slide {
+        padding: 0;
 
+      }
+    }
+  }
 }
