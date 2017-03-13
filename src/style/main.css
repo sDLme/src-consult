@@ -321,7 +321,7 @@ p {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background: #03b6e7 url("../../images/head-mail-icone.png") center no-repeat; }
+    background: #03b6e7 url("../images/head-mail-icone.png") center no-repeat; }
 
 .intro {
   height: 100vh;
@@ -421,9 +421,17 @@ p {
     flex-wrap: wrap;
     position: relative;
     padding: 0; }
+    @media (max-width: 767px) {
+      .features .feature-list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column; } }
     .features .feature-list .feature-list-item {
       width: 40%;
       margin-bottom: 70px; }
+      @media (max-width: 767px) {
+        .features .feature-list .feature-list-item {
+          width: 100%; } }
       .features .feature-list .feature-list-item:nth-child(odd) {
         text-align: right;
         margin-right: 10%;
@@ -454,7 +462,10 @@ p {
               transform: translate(-50%, -88%);
       border-radius: 50%;
       box-shadow: 0px 0px 79px 26px #dae7e9;
-      background: #fff url("../../images/feature-logo.png") center no-repeat; }
+      background: #fff url("../images/feature-logo.png") center no-repeat; }
+      @media (max-width: 767px) {
+        .features .feature-list:before {
+          display: none; } }
   .features .contact-us {
     padding: 20px;
     background: #565d5d;
@@ -464,6 +475,10 @@ p {
       line-height: 20px;
       font-size: 20px;
       font-family: 'Domine', serif; }
+      @media (max-width: 767px) {
+        .features .contact-us .contact-description {
+          line-height: 15px;
+          font-size: 15px; } }
 
 .portfolio {
   padding: 95px 0; }
@@ -520,12 +535,12 @@ p {
         font-weight: 700;
         color: #343a3b; }
       .services .services-list .services-list-item:nth-child(1) {
-        background: url("../../images/servis-list-item-bus.png") top left no-repeat; }
+        background: url("../images/servis-list-item-bus.png") top left no-repeat; }
       .services .services-list .services-list-item:nth-child(2) {
-        background: url("../../images/servise-list-item-local.png") top left no-repeat; }
+        background: url("../images/servise-list-item-local.png") top left no-repeat; }
       .services .services-list .services-list-item:nth-child(3) {
         margin-right: 0;
-        background: url("../../images/servise-list-item-account.png") top left no-repeat; }
+        background: url("../images/servise-list-item-account.png") top left no-repeat; }
 
 .testimonials {
   background: #03b6e7;
@@ -640,11 +655,11 @@ p {
                 transform: translateY(-50%);
         width: 45px;
         height: 45px;
-        background: url("../../images/contact-list-item-mail.png") center no-repeat; }
-      .contact-us .contact-list .contact-list-item:nth-child(2):before {
-        background: url("../../images/contact-list-item-phone.png") center no-repeat; }
-      .contact-us .contact-list .contact-list-item:nth-child(3):before {
-        background: url("../../images/contact-list-item-career.png") center no-repeat; }
+        background: url("../images/contact-list-item-mail.png") center no-repeat; }
+      .contact-us .contact-list .contact-list-item:nth-child(2) :before {
+        background: url("../images/contact-list-item-phone.png") center no-repeat; }
+      .contact-us .contact-list .contact-list-item:nth-child(3) :before {
+        background: url("../images/contact-list-item-career.png") center no-repeat; }
 
 .site-footer {
   padding-top: 90px;
@@ -675,11 +690,17 @@ p {
       text-transform: uppercase;
       font-size: 13px; }
     .site-footer .contact-inputs ::-moz-placeholder {
-      color: #c0392b; }
+      color: #5e5e5e;
+      text-transform: uppercase;
+      font-size: 13px; }
     .site-footer .contact-inputs :-moz-placeholder {
-      color: #c0392b; }
+      color: #5e5e5e;
+      text-transform: uppercase;
+      font-size: 13px; }
     .site-footer .contact-inputs :-ms-input-placeholder {
-      color: #c0392b; }
+      color: #5e5e5e;
+      text-transform: uppercase;
+      font-size: 13px; }
   .site-footer .btn-prime {
     -webkit-transform: translateX(-35px);
             transform: translateX(-35px); }

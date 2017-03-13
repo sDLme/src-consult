@@ -9,9 +9,16 @@
     flex-wrap: wrap;
     position: relative;
     padding: 0;
+    @media (max-width:767px) {
+      flex-direction: column;
+    }
     .feature-list-item {
       width: 40%;
       margin-bottom: 70px;
+
+      @media (max-width:767px) {
+        width: 100%;
+      }
 
       &:nth-child(odd) {
         text-align: right;
@@ -48,7 +55,10 @@
       transform: translate(-50%, -88%);
       border-radius: 50%;
       box-shadow: 0px 0px 79px 26px rgba(218,231,233,1);
-      background: $importent-color url("../../images/feature-logo.png") center no-repeat;
+      background: $importent-color url("../images/feature-logo.png") center no-repeat;
+      @media (max-width:767px) {
+        display: none;
+      }
     }
   }
   .contact-us {
@@ -60,6 +70,11 @@
       line-height: 20px;
       font-size:20px;
       font-family: 'Domine', serif;
+
+      @media (max-width:767px) {
+        line-height: 15px;
+        font-size:15px;
+      }
     }
   }
 }

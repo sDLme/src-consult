@@ -13,14 +13,14 @@
         color: $title-text;
       }
       &:nth-child(1) {
-        background: url("../../images/servis-list-item-bus.png") top left no-repeat;
+        background: url("../images/servis-list-item-bus.png") top left no-repeat;
       }
       &:nth-child(2) {
-        background: url("../../images/servise-list-item-local.png") top left no-repeat;
+        background: url("../images/servise-list-item-local.png") top left no-repeat;
       }
       &:nth-child(3) {
         margin-right: 0;
-        background: url("../../images/servise-list-item-account.png") top left no-repeat;
+        background: url("../images/servise-list-item-account.png") top left no-repeat;
       }
     }
   }
