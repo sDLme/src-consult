@@ -4,36 +4,101 @@
 
 ///testimonials slider
 $(document).ready(function(){
+    $(document).ready(function(){
+
+        $('.intro-slide').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 2,
+            nextArrow: false,
+            prevArrow: false,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+
 
 ///testimonials slider
     $('.slide-testimon').slick({
         dots: true,
         autoplay: true,
-        slickNext: false,
-        slickPrev: false,
+        nextArrow: false,
+        prevArrow: false,
 }),
 
 /// Portfolio-slider
     $('.project-img-slide').slick({
-        //autoplay: true,
+        autoplay: true,
+        nextArrow: false,
+        prevArrow: false,
     }),
 
-    ///ABOUT carousel
+///ABOUT carousel
     $('.carousel-clients').slick({
         infinite: true,
         slidesToShow: 5,
-        slidesToScroll: 3,
+        slidesToScroll: 4,
         slickNext: true,
-        slickPrev: true
-    }),
+        slickPrev: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            }
+        ]
+    });
+
 ///intro
-    $('.intro-slide').slick({
-        infinite: true,
-        autoplay: true,
-        slidesToShow: 4,
-        slidesToScroll: 2,
-        dots: true,
-    })
+
+    });
 });
 
 

@@ -13,6 +13,10 @@
       padding-top: 60px;
       border-top: 1px solid #e7eff1;
     .carousel-client-item {
+      opacity: 0.6;
+      &:hover {
+        opacity: 1;
+      }
       img {
         margin: 0 auto;
       }
@@ -26,11 +30,11 @@
     }
       .slick-next {
         right: 0;
-        background: url("../../images/arrow-right.png") center no-repeat;
+        background: url("../images/arrow-right.png") center no-repeat;
       }
     .slick-prev {
       left: 0;
-      background: url("../../images/arrow-left.png") center no-repeat;
+      background: url("../images/arrow-left.png") center no-repeat;
     }
   }
 }

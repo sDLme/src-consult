@@ -3,6 +3,17 @@
   padding-bottom: 60px;
   background: url("../images/intro-bg.jpg") center no-repeat;
   background-size: cover;
+  @media (max-width:992px) {
+    height: 100%;
+  }
+  .mobile-nav-wrap {
+    padding: 0 15px;
+  }
+  .intro-slide {
+    @media (max-width:768px) {
+     //
+    }
+  }
   .site-title {
     margin-top: 0;
     margin-right: auto;
@@ -16,15 +27,14 @@
     display: flex;
     align-items: stretch;
     justify-content: center;
-    width: 260px;
-    height: 280px;
     padding: 15px;
   }
   .intro-slide-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 260px;
+    height: 280px;
     background: $prime-blue;
     cursor: pointer;
     &:hover {
@@ -57,6 +67,12 @@
           display: block;
         }
       }
+    }
+  }
+  .mobile-nav-wrap {
+    margin: 20px 0;
+    .mobile-nav-item {
+      font-size: 12px;
     }
   }
 }

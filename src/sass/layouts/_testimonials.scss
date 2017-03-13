@@ -2,8 +2,8 @@
   background: $prime-blue;
   color: $importent-color;
   .test-wrapp {
-    padding: 90px 0;
-    background: url("../../images/qout-big.png") top left no-repeat;
+    padding: 110px 0;
+    background: url("../images/qout-big.png") top left no-repeat;
     .slide-testimon-wrap {
       max-width: 900px;
       width: 100%;
@@ -16,7 +16,7 @@
           display: block;
           position: absolute;
           right: 0;
-          bottom: 50%;
+          bottom: 20%;
           width: 35px;
           height: 25px;
           background: url("../images/qout-littel.png")bottom right no-repeat;
@@ -25,19 +25,26 @@
     }
     .slick-dots {
       top: -50%;
+      @media (max-width:767px) {
+        top: -40%;
+      }
       li {
         height: 55px;
         width: 55px;
-        background: url("../images/test-item-one.png") center no-repeat;
-        &:active {
+        border-radius: 50%;
+        background: url("../images/test-item-one.jpg") center no-repeat;
+        background-size: cover;
+        opacity: 0.6;
+        &:active, &:hover {
           transform: scale(1.2,1.2);
+          opacity: 1;
         }
         &:nth-child(2) {
-          background: url("../images/test-item-two.png") center no-repeat;
+          background: url("../images/test-item-two.jpg") center no-repeat;
           background-size: contain;
         }
         &:nth-child(3) {
-          background: url("../images/test-item-three.png") center no-repeat;
+          background: url("../images/test-item-three.jpg") center no-repeat;
         }
       }
     }

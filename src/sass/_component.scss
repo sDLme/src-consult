@@ -29,7 +29,7 @@
   font-size: 32px;
   font-weight: 700;
   color: $title-text;
-   &-color {
+   &-light {
      font-size: 48px;
       color: $importent-color;
   }
@@ -42,7 +42,13 @@
   line-height: 28px;
   font-family: 'Domine', serif;
   font-weight: 400;
-  &-color {
+  &-light {
     color: $importent-color;
   }
+}
+
+.nav-info {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: $menu-text-color;
 }

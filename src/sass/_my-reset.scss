@@ -1,8 +1,5 @@
-body {
-  font-size: 15px;
-  font-family: 'Montserrat', sans-serif;
-  color: $paragraf-text-color;
-}
+
+
 //press footer
 html{
   height: 100%;
@@ -11,6 +8,9 @@ html{
     height: 100%;
     display: flex;
     flex-direction: column;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: $paragraf-text-color;
     main{
       flex: 1 0 auto;
     }
@@ -20,28 +20,32 @@ html{
   }
 }
 // and press
+
+.container {
+  padding: 0 15px;
+}
+
 ul,
 ol {
   padding-left: 0;
   list-style: none;
 }
-a,
-a:visited,
-a:active,
-a:link {
-  color: inherit;
-  text-decoration: none;
+
+a {
+  &:visited,
+  &:hover,
+  &:link {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 p {
   margin-bottom: 0;
 }
-.container {
-  padding: 0 15px;
-}
 
 //slick
 
-.slick-prev, .slick-next { display: none}
+//.slick-prev, .slick-next { display: none}
 
 .testimonials .slick-prev:before,
 .testimonials .slick-next:before,

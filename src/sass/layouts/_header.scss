@@ -1,12 +1,7 @@
 
 .site-head {
   padding-top:55px;
-  .navigation,
-  .contact-date {
-    text-transform: uppercase;
-    font-weight: 400;
-    color: $menu-text-color;
-  }
+
   .navigation-item {
     margin-right: 15px;
     margin-left: 15px;
@@ -26,6 +21,10 @@
     line-height: 30px;
     font-size: 14px;
     background: url('../images/head-phone-icone.png') center left no-repeat;
+
+    @media (max-width:768px) {
+      font-size: 12px;
+    }
   }
   .head-contact-link {
     display: inline-block;
@@ -35,3 +34,6 @@
     background:  $prime-blue url("../images/head-mail-icone.png") center no-repeat;
   }
 }
+
+
+

@@ -28,6 +28,10 @@
           &:nth-child(3) {
             background: url("../images/feature-list-item-secur.png") 100% 8%  no-repeat;
           }
+
+        @media (max-width:767px) {
+          margin-right: 0;
+        }
       }
       &:nth-child(even) {
         text-align: left;
@@ -36,6 +40,9 @@
         background: url("../images/feature-list-item-bus.png") 0 8%  no-repeat;
         &:nth-child(4) {
           background: url("../images/feature-list-item-creat.png") 0 8%  no-repeat;
+        }
+        @media (max-width:767px) {
+          margin-left: 0;
         }
       }
     }
@@ -71,10 +78,16 @@
       font-size:20px;
       font-family: 'Domine', serif;
 
-      @media (max-width:767px) {
+      @media (max-width:992px) {
         line-height: 15px;
         font-size:15px;
       }
+    }
+  }
+  .btn-prime {
+    @media (max-width:992px) {
+      text-align: center;
+      line-height: 20px;
     }
   }
 }
