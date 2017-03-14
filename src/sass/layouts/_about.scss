@@ -24,6 +24,7 @@
   }
   .slick-prev {
     left: -13px;
+    z-index: 2;
     background: url("../images/arrow-left.png") center no-repeat;
   }
 }

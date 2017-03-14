@@ -20,15 +20,15 @@
       background: linear-gradient(to right, #dadbdb 0%, #dae6e8 0%, #e2e2e2 1%, #e6e6e6 2%, #fefefe 9%);
     }
     .blog-img-wrap {
-      align-self: stretch;
       display: flex;
+      align-self: stretch;
       @media (max-width:767px ) {
         display: none;
       }
     }
     .blog-content {
       margin-top: 50px;
-      padding-left: 40px;
+      padding-left: 50px;
       padding-bottom: 15px;
     }
     .blog-item-date {
