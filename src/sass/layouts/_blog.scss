@@ -1,39 +1,41 @@
-.blog {
-  padding: 90px 0;
-  background: #e7eff1;
-  .blog-list {
-    margin: 45px 0 60px;
-    .blog-list-item {
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      border-top: 3px solid $nav-btn-color;
-      background: $importent-color;
-      &:nth-child(even) {
-        padding-right: 20px;
-        border-top: 3px solid $prime-orang;
+.blog-list {
+  margin: 45px 0 60px;
+  .blog-list-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-right: 20px;
+    border-top: 3px solid $nav-btn-color;
+    background: $importent-color;
+    .title {
+      margin-bottom: 30px;
+    }
+    &:nth-child(odd){
+      @media (max-width:767px ) {
         background: linear-gradient(to right, #dadbdb 0%, #dae6e8 0%, #e2e2e2 1%, #e6e6e6 2%, #fefefe 9%);
       }
-      .blog-img-wrap {
-        align-self: stretch;
-        display: flex;
+    }
+    &:nth-child(even) {
+      border-top: 3px solid $prime-orang;
+      background: linear-gradient(to right, #dadbdb 0%, #dae6e8 0%, #e2e2e2 1%, #e6e6e6 2%, #fefefe 9%);
+    }
+    .blog-img-wrap {
+      align-self: stretch;
+      display: flex;
+      @media (max-width:767px ) {
+        display: none;
       }
-      .blog-content {
-        margin-top: 50px;
-        padding-left: 40px;
-        padding-bottom: 15px;
-      }
-      .blog-item-title,
-      .blog-item-date {
-        color: $title-text;
-      }
-      .blog-item-title {
-        margin-bottom: 35px;
-        font-weight: 700;
-      }
-      .blog-item-date {
-        font-family: 'Domine', serif;
-      }
+    }
+    .blog-content {
+      margin-top: 50px;
+      padding-left: 40px;
+      padding-bottom: 15px;
+    }
+    .blog-item-date {
+      display: block;
+      margin-bottom: 15px;
+      font-family: 'Domine', serif;
+      color: $title-text;
     }
   }
 }

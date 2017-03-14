@@ -1,54 +1,74 @@
-.portfolio {
-  padding: 95px 0;
-  .project-list {
-    img {
-      width: 100%;
-    }
-    margin-top: 30px;
+.project-list {
+  margin-top: 30px;
+  padding: 0;
+  img {
+    width: 100%;
+  }
+}
+.project-list-item {
+  position: relative;
+  margin-bottom: 20px;
+  .slick-dotted.slick-slider {
+    margin: 0;
     padding: 0;
-    .project-list-item {
-      position: relative;
-      margin-bottom: 20px;
-      .meta-title {
-        position: absolute;
-        top:20px;
-        left: 40px;
-        padding: 0 15px;
-        line-height: 33px;
-        font-size: 12px;
-        text-transform: uppercase;
-        border: 2px solid $prime-orang;
-        border-radius: 50px;
-        color: $importent-color;
-      }
-      .project-title {
-        color: $importent-color;
-        &-color {
-          color: $title-text;
+    .slick-dots {
+      bottom: 8%;
+      right: 4%;
+      display: flex;
+      justify-content: flex-end;
+      & > li {
+        border: 3px solid $importent-color;
+        border-radius: 50%;
+        position: relative;
+        &:hover {
+          border-color: $nav-btn-color;
+          &:before {
+            content: '';
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: $nav-btn-color;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
         }
-      }
-      .project-description {
-        padding: 40px 30px;
-      }
-      &:nth-child(odd) {
-        .project-description {
-          background: $prime-orang;
-        }
-      }
-      &:nth-child(even) {
-        display: flex;
-        flex-direction: column;
-        .meta-title {
-          z-index: 2;
-        }
-        .project-description {
-          border: 1px solid #dae5e8;
-        }
-      }
-      .project-img-slide {
-        padding: 0;
-
       }
     }
+  }
+  .meta-title {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    padding: 0 15px;
+    line-height: 33px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 2px solid $prime-orang;
+    border-radius: 50px;
+    color: $importent-color;
+  }
+
+  .project-description {
+    padding: 40px 30px;
+  }
+  &:nth-child(odd) {
+    .project-description {
+      background: $prime-orang;
+    }
+  }
+  &:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+    .meta-title {
+      z-index: 2;
+    }
+    .project-description {
+      border: 1px solid #dae5e8;
+    }
+  }
+  .project-img-slide {
+    padding: 0;
   }
 }

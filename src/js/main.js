@@ -5,13 +5,13 @@
 ///testimonials slider
 $(document).ready(function(){
     $(document).ready(function(){
-
+///INTRO SLID
         $('.intro-slide').slick({
             dots: true,
             infinite: false,
             speed: 300,
             slidesToShow: 4,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
             nextArrow: false,
             prevArrow: false,
             responsive: [
@@ -19,20 +19,20 @@ $(document).ready(function(){
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 3,
-                        slidesToScroll: 2,
+                        slidesToScroll: 1,
                         infinite: true,
                         dots: true
                     }
                 },
                 {
-                    breakpoint: 600,
+                    breakpoint: 800,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                         slidesToScroll: 2
                     }
                 },
                 {
-                    breakpoint: 480,
+                    breakpoint: 570,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1
@@ -53,7 +53,8 @@ $(document).ready(function(){
 
 /// Portfolio-slider
     $('.project-img-slide').slick({
-        autoplay: true,
+        //autoplay: true,
+        dots: true,
         nextArrow: false,
         prevArrow: false,
     }),
@@ -95,8 +96,6 @@ $(document).ready(function(){
             }
         ]
     });
-
-///intro
 
     });
 });

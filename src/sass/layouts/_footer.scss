@@ -1,91 +1,86 @@
-.site-footer {
-  padding-top: 90px;
-  background: #262829;
-  .foot-logo {
-    @media (max-width: 767px) {
-      margin-bottom: 40px;
-    }
+.foot-logo {
+  @media (max-width: 767px) {
+    margin-bottom: 40px;
   }
-  .foot-title {
-    text-transform: uppercase;
-    color: $menu-text-color;
-  }
-  .foot-nav-item,
-  .foot-industary-item {
-    line-height: 30px;
-    font-size: 13px;
-    text-transform: uppercase;
-  }
-  .contact-inputs {
-    display: flex;
-    margin: 40px 0;
-    .contact-input-item {
-      padding-right: 35px;
-      padding-left: 35px;
-      border: none;
-      border-top-left-radius: 50px;
-      border-bottom-left-radius: 50px;
-      background: #323334;
-      color: #5e5e5e;
-      outline: none;
-    }
-    ::-webkit-input-placeholder {
-      color: #5e5e5e;
-      text-transform: uppercase;
-      font-size: 13px
-    }
-    ::-moz-placeholder {
-      color: #5e5e5e;
-      text-transform: uppercase;
-      font-size: 13px
-    }
-    :-moz-placeholder {
-      color: #5e5e5e;
-      text-transform: uppercase;
-      font-size: 13px
-    }
-    :-ms-input-placeholder {
-      color: #5e5e5e;
-      text-transform: uppercase;
-      font-size: 13px
-    }
-  }
+}
+.foot-nav-item,
+.foot-industary-item {
+  line-height: 30px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.contact-inputs {
+  display: flex;
+  margin: 40px 0;
   .btn-prime {
     transform: translateX(-35px);
   }
-  .footer-foo {
-    padding: 20px 0;
-    border-top: 1px solid #323334;
-    .copy {
-      @media (max-width: 992px) {
-        order: 2;
-        margin: 10px auto;
-      }
+  .contact-input-item {
+    width: 100%;
+    padding-right: 35px;
+    padding-left: 35px;
+    border: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background: #323334;
+    color: #5e5e5e;
+    outline: none;
+  }
+  ::-webkit-input-placeholder {
+    color: #5e5e5e;
+    text-transform: uppercase;
+    font-size: 13px
+  }
+  ::-moz-placeholder {
+    color: #5e5e5e;
+    text-transform: uppercase;
+    font-size: 13px
+  }
+  :-moz-placeholder {
+    color: #5e5e5e;
+    text-transform: uppercase;
+    font-size: 13px
+  }
+  :-ms-input-placeholder {
+    color: #5e5e5e;
+    text-transform: uppercase;
+    font-size: 13px
+  }
+}
+.footer-foo {
+  padding: 20px 0;
+  border-top: 1px solid #323334;
+  .copy {
+    @media (max-width: 992px) {
+      order: 2;
+      margin: 10px auto;
+    }
+    @media (max-width: 768px) {
+      font-size: 10px;
+    }
+  }
+}
+.social-list {
+  @media (max-width: 992px) {
+    order: 1;
+    margin: 0 auto;
+  }
+  @each $social-name, $social-color in $social-colors {
+    .social-list-#{$social-name} {
+      color: $social-color;
+      margin-left: 40px;
+      text-transform: uppercase;
+
       @media (max-width: 768px) {
+        margin-left: 5px;
+        margin-right: 5px;
         font-size: 10px;
       }
     }
   }
-  .social-list {
-    @media (max-width: 992px) {
-      order: 1;
-      margin: 0 auto;
-    }
-    @each $social-name, $social-color in $social-colors {
-      .social-list-#{$social-name} {
-        color: $social-color;
-        margin-left: 40px;
-        text-transform: uppercase;
-
-        @media (max-width: 768px) {
-          margin-left: 5px;
-          margin-right: 5px;
-          font-size: 10px;
-        }
-      }
-    }
-  }
 }
+
 
 
 

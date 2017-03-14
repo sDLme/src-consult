@@ -1,6 +1,5 @@
 .intro {
   height: 100vh;
-  padding-bottom: 60px;
   background: url("../images/intro-bg.jpg") center no-repeat;
   background-size: cover;
   @media (max-width:992px) {
@@ -31,6 +30,7 @@
   }
   .intro-slide-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 260px;
@@ -42,6 +42,7 @@
     }
     .intro-slide-img {
       display: block;
+      margin-bottom: 30px;
     }
   }
   .slick-dots {
@@ -53,15 +54,17 @@
       &:before {
         content: "";
         display: none;
-        width: 3px;
-        height: 3px;
         position: absolute;
+        width: 7px;
+        height: 7px;
         top: 50%;
         left: 50%;
-        transform: translate(-50%);
+        transform: translate(-45%, -45%);
+        border-radius: 50%;
         background: $nav-btn-color;
       }
-      &:active {
+      &:active,
+      &:hover {
         border-color: $nav-btn-color;
         &:before {
           display: block;
@@ -72,7 +75,11 @@
   .mobile-nav-wrap {
     margin: 20px 0;
     .mobile-nav-item {
-      font-size: 12px;
+      font-size: 10px;
+      transition: all, 0.3s;
+      &:hover {
+        color: $prime-orang;
+      }
     }
   }
 }
